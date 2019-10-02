@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_pressed">
+
+
+    <TextView
+        android:id="@+id/marker_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#4CAF50"
+        android:ellipsize="none"
+        android:fontFamily="sans-serif-condensed"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textDirection="rtl"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <TextView
+        android:id="@+id/marker_description"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:inputType="textMultiLine"
+        android:maxLines="4"
+        android:padding="5dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textDirection="rtl"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marker_address" />
+
+    <TextView
+        android:id="@+id/open_hoursTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textDirection="rtl"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/dialbutton"
+        android:layout_width="49dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#4CAF50"
+        android:text="התקשר"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/open_hoursTxt" />
+
+    <TextView
+        android:id="@+id/marker_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#6e6d6d"
+        android:textDirection="rtl"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/marker_name"
+        app:layout_constraintTop_toBottomOf="@+id/marker_name" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#4CAF50"
+        android:text="שעות פעילות :"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textDirection="rtl"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marker_description" />
+
+    <ImageView
+        android:id="@+id/imagesrc"
+        android:layout_width="41dp"
+        android:layout_height="39dp"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+</android.support.constraint.ConstraintLayout>
